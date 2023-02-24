@@ -1,80 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <script
-      src="https://kit.fontawesome.com/197c46ee62.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/197c46ee62.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <title>Cards-List</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <div class="container">
-        <form>
-          <input type="text" placeholder="Find some service" />
-          <button class="search-button" type="submit"></button>
-        </form>
-      </div>
+        <div class="container">
+            <form>
+                <input type="text" placeholder="Find some service" />
+                <button class="search-button" type="submit"></button>
+            </form>
+        </div>
     </header>
     <main>
-      <div class="container">
-        <section class="common">
-          <div class="common-block__head">
-            <h1 class="common-header">Common</h1>
-          </div>
-          <input id="toggle" type="checkbox" style="visibility: hidden" />
-          <label class="arrow arrow-toggle" for="toggle"></label>
-          <div class="common-cards">
-            <div class="common-card-item" id="first-card">
-              <h2 class="card-header">
-                <a
-                  href="http://us.gblnet.net/oper/?core_section=dashboard"
-                  target="_blank"
-                  >Userside</a
-                >
-              </h2>
-              <h3 class="card-description">
-                Планирование ресурсов предприятия
-              </h3>
-              <p class="card-text">
-                Здесь можно смотреть и выполнять заявки.<br />
-                Логопассы индивидуальные.
-              </p>
-            </div>
-            <div class="common-card-item" id="second-card">
-              <h2 class="card-header">
-                <a
-                  href="http://zbx.it-service.io/zabbix.php?action=dashboard.view"
-                  target="_blank"
-                  >Zabbix</a
-                >
-              </h2>
-              <h3 class="card-description">Система мониторинга</h3>
-              <p class="card-text">
-                Здесь можно найти проблемы, которые есть в сети. Посмотреть
-                кол-во трафика и потери icmp. Логопассы индивидуальные.
-              </p>
-            </div>
-            <div class="common-card-item" id="third-card">
-              <h2 class="card-header">
-                <a
-                  href="https://voip.etelecom.ru/billing/images/callc/login"
-                  target="_blank"
-                  >MOR</a
-                >
-              </h2>
-              <h3 class="card-description">Description</h3>
-              <p class="card-text"></p>
-            </div>
-          </div>
-        </section>
-      </div>
+        <div class="container">
+            <section class="common">
+                <div class="common-block__head">
+                    <h1 class="cards-section-header">Common</h1>
+                </div>
+                <!--<input id="toggle" type="checkbox" style="visibility: hidden" />
+                <label class="arrow arrow-toggle" for="toggle"></label>-->
+                <div class="common-cards">
+                    <div class="common-card-item card-background" id="first-card">
+                        <h2 class="card-header">
+                            <a href="http://us.gblnet.net/oper/?core_section=dashboard" target="_blank">Userside</a>
+                        </h2>
+                        <h3 class="card-description">
+                            Планирование ресурсов предприятия
+                        </h3>
+                        <p class="card-text">
+                            Здесь можно смотреть и выполнять заявки.<br />
+                            Логопассы индивидуальные.
+                        </p>
+                    </div>
+                    <div class="common-card-item card-background" id="second-card">
+                        <h2 class="card-header">
+                            <a href="http://zbx.it-service.io/zabbix.php?action=dashboard.view"
+                                target="_blank">Zabbix</a>
+                        </h2>
+                        <h3 class="card-description">Система мониторинга</h3>
+                        <p class="card-text">
+                            Здесь можно найти проблемы, которые есть в сети. Посмотреть
+                            кол-во трафика и потери icmp. Логопассы индивидуальные.
+                        </p>
+                    </div>
+                    <div class="common-card-item card-background" id="third-card">
+                        <h2 class="card-header">
+                            <a href="https://voip.etelecom.ru/billing/images/callc/login" target="_blank">MOR</a>
+                        </h2>
+                        <h3 class="card-description">voip.etelecom</h3>
+                        <p class="card-text">
+                            Здесь можно посмотреть исходящие ET.
+                            <br>
+                            log: support
+                            <br>
+                            pass: RSfX#gEuM7jl
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="etelecom">
+                <div class="common-block__head">
+                    <h1 class="cards-section-header">Etelecom + Tiera</h1>
+                </div>
+                <div class="common-cards">
+                    <div class="common-card-item et-item card-background" id="fourth-card">
+                        <h2 class="card-header">
+                            <a href="https://voip.etelecom.ru/pauseAgents/index.php" target="_blank">PauseAgents</a>
+                        </h2>
+                        <h3 class="card-description">
+                            Включение и выключение из линии
+                        </h3>
+                        <p class="card-text et-text">
+                            В простонародье “галки”. Здесь включаться и выключаться из линий.
+                            Логопассы от userside.
+                        </p>
+                    </div>
+                    <div class="common-card-item et-item card-background" id="fifth-card">
+                        <h2 class="card-header">
+                            <a href="https://voip.etelecom.ru/pauseAgents/index.php" target="_blank">Asterisk</a>
+                        </h2>
+                        <h3 class="card-description">
+                            Включение и выключение из линии
+                        </h3>
+                        <p class="card-text et-text">
+                            Необходим для просмотра очереди звонков, подсчета звонков.
+                            <br>
+                            login: monitor
+                            <br>
+                            password: monitor34
+                        </p>
+                    </div>
+                    <div class="common-card-item et-item card-background" id="sixth-card">
+                        <h2 class="card-header">
+                            <a href="https://voip.etelecom.ru/pauseAgents/index.php" target="_blank">TMS админка</a>
+                        </h2>
+                        <h3 class="card-description">
+                            ETmedia
+                        </h3>
+                        <p class="card-text et-text">
+                            Здесь можно отключать лишние устройства ETmedia.
+                        </p>
+                    </div>
+                    <div class="common-card-item et-item card-background" id="seventh-card">
+                        <h2 class="card-header">
+                            <a href="https://voip.etelecom.ru/pauseAgents/index.php" target="_blank">TVplayer</a>
+                        </h2>
+                        <h3 class="card-description">
+                            ETmedia player
+                        </h3>
+                        <p class="card-text et-text">
+                            Здесь можно проверить есть ли неполадки с вещанием.
+                        </p>
+                    </div>
+                    <div class="common-card-item et-item card-background" id="eighth-card">
+                        <h2 class="card-header">
+                            <a href="https://voip.etelecom.ru/pauseAgents/index.php" target="_blank">DreCrypt</a>
+                        </h2>
+                        <h3 class="card-description">
+                            Подписки на CAM
+                        </h3>
+                        <p class="card-text et-text">
+                            Здесь можно проверить наличие подписок на кам модуле.
+                            <br>
+                            login: bird
+                            <br>
+                            pass: twittering
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="athome">
+                <div class="common-block__head">
+                    <h1 class="cards-section-header">AT-Home</h1>
+                </div>
+                <div class="common-cards">
+                    <div class="common-card-item ah-item card-background" id="ninth-card">
+                        <h2 class="card-header">
+                            <a href="http://maincc.athome.pro/pauseagents2/" target="_blank">MainCC</a>
+                        </h2>
+                        <h3 class="card-description">
+                            Включение и выключение из линии
+                        </h3>
+                        <p class="card-text ah-text">
+                            Галки ЭХ. Включение и выключение из линий.
+                            Логопассы от userside.                            
+                        </p>
+                    </div>
+                    <div class="common-card-item ah-item card-background" id="tenth-card">
+                        <h2 class="card-header">
+                            <a href="http://qm.athome.pro/autenticazione.jsp" target="_blank">QueueMetrics</a>
+                        </h2>
+                        <h3 class="card-description">
+                            Статистика линий
+                        </h3>
+                        <p class="card-text ah-text">
+                            Тут можно посмотреть кол-во звонков.
+                            <br>
+                            log: support
+                            <br>
+                            pass: joh1aiM7                      
+                        </p>
+                    </div>
+                    <div class="common-card-item ah-item card-background" id="eleventh-card">
+                        <h2 class="card-header">
+                            <a href="https://billing.athome.pro/index.php" target="_blank">NetUP</a>
+                        </h2>
+                        <h3 class="card-description">
+                            Биллинг AT-home
+                        </h3>
+                        <p class="card-text ah-text">
+                            Здесь можно привязать mac-адрес клиенту.
+                            Также посмотреть некоторую инфу.
+                            <br>
+                            log: XXX
+                            <br>
+                            pass: XXX                         
+                        </p>
+                    </div>
+                    <div class="common-card-item ah-item card-background" id="twelfth-card">
+                        <h2 class="card-header">
+                            <a href="http://graylog.it-service.io/search?q=&rangetype=relative&from=3600" target="_blank">GrayLog</a>
+                        </h2>
+                        <h3 class="card-description">
+                            DHCP log
+                        </h3>
+                        <p class="card-text ah-text">
+                            Здесь можно посмотреть логи DHCP.
+                            <br>
+                            log: support
+                            <br>
+                            pass: 123QWE!@#                   
+                        </p>
+                    </div>
+                    <div class="common-card-item ah-item card-background" id="thirteenth-card">
+                        <h2 class="card-header">
+                            <a href="http://maincc.athome.pro/pauseagents2/" target="_blank">Wiki.athome</a>
+                        </h2>
+                        <h3 class="card-description">
+                            База знаний AH
+                        </h3>
+                        <p class="card-text ah-text">
+                            Здесь много полезной инфы.
+                            Необходима регистрация.                         
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
     <footer></footer>
-  </body>
+</body>
+
 </html>

@@ -4,28 +4,32 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  body {
+}
+
+body {
     background-color: #171717;
-  }
-  .container {
+}
+
+.container {
     max-width: 1060px;
     width: 100%;
     margin: 0 auto;
-  }
-  a {
+}
+
+a {
     text-decoration: none;
     color: inherit;
-  }
-  
-  /* header-start */
-  form {
+}
+
+/* header-start */
+form {
     position: relative;
     width: 450px;
     margin: 0 auto;
     margin-top: 132px;
-  }
-  input {
+}
+
+input {
     width: 100%;
     height: 45px;
     padding-left: 10px;
@@ -34,8 +38,9 @@
     outline: none;
     background: #979797;
     color: #535353;
-  }
-  .search-button {
+}
+
+.search-button {
     position: absolute;
     top: 0;
     right: 0px;
@@ -45,96 +50,159 @@
     background: #3d3d3d;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
-  }
-  .search-button:before {
+}
+
+.search-button:before {
     content: '\f002';
     font-family: FontAwesome;
     font-size: 16px;
     color: #f9f0da;
-  }
-  /* header-end */
-  
-  /* main-start */
-  
-  /* section ONE - common */
-  li {
+}
+
+/* header-end */
+
+/* main-start */
+
+/* section ONE - common */
+li {
     list-style-type: none;
-  }
-  h1 {
+}
+
+h1 {
     color: #f1f1f1;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 35px 0;
-  }
-  h2 {
+}
+
+h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
     color: #121212;
-  }
-  h3 {
+}
+
+h3 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 10px;
     color: #363636;
     opacity: 65%;
-  }
-  .common-cards {
+}
+
+.common-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-  .common-card-item {
+    
+}
+
+.common-card-item {
     min-width: 300px;
     height: 200px;
     background-color: #fdf4f4aa;
     border-radius: 10px;
     position: relative;
     margin-bottom: 40px;
-  }
-  .card-header {
+}
+
+.card-header {
     position: absolute;
     left: 100px;
     top: 25px;
-  }
-  .card-description {
+}
+
+.card-description {
     position: absolute;
     left: 100px;
     top: 55px;
-  }
-  .card-text {
+}
+
+.card-text {
     position: absolute;
     left: 100px;
     top: 80px;
     color: #121212;
     font-size: 12px;
     max-width: 150px;
-  }
-  .card-header a:hover {
+}
+
+.card-header a:hover {
     color: #f1f1f1;
-  }
-  #first-card {
+}
+
+#first-card {
     background-image: url('img/US.svg');
-    background-repeat: no-repeat;
-    background-size: 20%;
-    background-position: 20px 20px;
-  }
-  #second-card {
+}
+
+#second-card {
     background-image: url('img/zabbix.svg');
-    background-repeat: no-repeat;
-    background-size: 20%;
-    background-position: 20px 20px;
-  }
-  #third-card {
+}
+
+#third-card {
     background-image: url('img/mor\ x14.svg');
+}
+.card-background {
     background-repeat: no-repeat;
     background-size: 20%;
     background-position: 20px 20px;
-  }
-  
-  /* section ONE end */
-  
-  /* main-end */
-  
-  
-  /* Мой CSS START */
+}
+
+/* section ONE end */
+
+/* section TWO start */
+.et-item {
+    background-color: #855BE2;
+}
+.et-text {
+    color: #f1f1f1;
+}
+
+#fourth-card {
+    background-image: url('img/pauseAgents.svg');
+}
+#fifth-card {
+    background-image: url('img/asterix.svg');
+}
+#sixth-card {
+    background-image: url('img/tms.svg');
+}
+#seventh-card {
+    background-image: url('img/tvip.svg');
+}
+#eighth-card {
+    background-image: url('img/dre\ crypt.svg');
+}
+#sixth-card {
+    background-image: url('img/tms.svg');
+}
+/* section TWO end */
+
+/* section THREE start */
+
+.ah-item {
+    background-color: #e3d35a;
+}
+.ah-text {
+
+}
+#ninth-card {
+    background-image: url('img/mainCC.svg');
+}
+#tenth-card {
+    background-image: url('img/queuemetrix.svg');
+}
+#eleventh-card {
+    background-image: url('img/netup.svg');
+}
+#twelfth-card {
+    background-image: url('img/graylog.svg');
+}
+#thirteenth-card {
+    background-image: url('img/wiki.svg');
+}
+/* section THREE end */
+/* main-end */
+
+
+/* Toggle-arrow 
   .common {
     position: relative;
   }
@@ -156,7 +224,7 @@
     margin-bottom: 3px;
     transition: 0.2s linear;
   }
-  
+    
   .arrow:hover {
     border-color: #1a60a2;
   }
@@ -179,5 +247,4 @@
     display: none;
     color: rgb(248, 245, 245);
   }
-  /* Мой CSS END */
-  
+  Мой CSS END */
